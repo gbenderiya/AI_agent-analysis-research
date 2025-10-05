@@ -1,0 +1,308 @@
+[
+  {
+    "filename": "python/logic/sum_numbers.py",
+    "language": "python",
+    "bug_type": "sum_numbers.py",
+    "description": "# Logic bug: accumulator initialized to 1 instead of 0 -> wrong sum for typical lists"
+  },
+  {
+    "filename": "python/syntax/bad_indent.py",
+    "language": "python",
+    "bug_type": "bad_indent.py",
+    "description": "# Syntax bug via indentation error introduced in complex function - subtle in large files"
+  },
+  {
+    "filename": "python/api_misuse/requests_timeout.py",
+    "language": "python",
+    "bug_type": "requests_timeout.py",
+    "description": "# API misuse: not specifying timeout on requests.get; can hang in production"
+  },
+  {
+    "filename": "python/off_by_one/find_slice.py",
+    "language": "python",
+    "bug_type": "find_slice.py",
+    "description": "# Off-by-one: wrong slice end causes missing last item"
+  },
+  {
+    "filename": "python/concurrency/thread_share.py",
+    "language": "python",
+    "bug_type": "thread_share.py",
+    "description": "# Concurrency bug: shared mutable state without locking causes race conditions"
+  },
+  {
+    "filename": "python/performance_antipattern/inefficient_join.py",
+    "language": "python",
+    "bug_type": "inefficient_join.py",
+    "description": "# Performance antipattern: building strings in a loop (quadratic cost)"
+  },
+  {
+    "filename": "python/api_misuse/sql_injection.py",
+    "language": "python",
+    "bug_type": "sql_injection.py",
+    "description": "# API misuse / security: naive SQL concatenation leads to SQL injection"
+  },
+  {
+    "filename": "python/off_by_one/index_loop.py",
+    "language": "python",
+    "bug_type": "index_loop.py",
+    "description": "# Off-by-one: loop uses <= causing IndexError on last iteration in some cases"
+  },
+  {
+    "filename": "nodejs/logic/callback_error.js",
+    "language": "nodejs",
+    "bug_type": "callback_error.js",
+    "description": "/* Logic bug: forgetting to return inside callback leads to multiple responses in Express handlers */"
+  },
+  {
+    "filename": "nodejs/syntax/missing_comma.js",
+    "language": "nodejs",
+    "bug_type": "missing_comma.js",
+    "description": "// Syntax bug: trailing comma missing in a large object literal after refactor"
+  },
+  {
+    "filename": "nodejs/api_misuse/fs_read.js",
+    "language": "nodejs",
+    "bug_type": "fs_read.js",
+    "description": "/* API misuse: using fs.readFileSync on request path without validation - blocking & insecure */"
+  },
+  {
+    "filename": "nodejs/off_by_one/paginate.js",
+    "language": "nodejs",
+    "bug_type": "paginate.js",
+    "description": "// Off-by-one: incorrect calculation of slice end leads to missing one item per page"
+  },
+  {
+    "filename": "nodejs/concurrency/async_for_loop.js",
+    "language": "nodejs",
+    "bug_type": "async_for_loop.js",
+    "description": "/* Concurrency bug: using var in loop causing closure to capture same i and wrong behavior */"
+  },
+  {
+    "filename": "nodejs/performance_antipattern/sync_in_hot_path.js",
+    "language": "nodejs",
+    "bug_type": "sync_in_hot_path.js",
+    "description": "/* Performance antipattern: synchronous crypto operation in request handler blocks event loop */"
+  },
+  {
+    "filename": "nodejs/api_misuse/buffer_concat.js",
+    "language": "nodejs",
+    "bug_type": "buffer_concat.js",
+    "description": "/* API misuse: incorrect Buffer.concat usage with numeric length causes silent truncation */"
+  },
+  {
+    "filename": "nodejs/logic/duplicate_insert.js",
+    "language": "nodejs",
+    "bug_type": "duplicate_insert.js",
+    "description": "/* Logic bug: double insert due to missing error handling path - race in callback leads to duplicate DB writes */"
+  },
+  {
+    "filename": "php/syntax/missing_semicolon.php",
+    "language": "php",
+    "bug_type": "missing_semicolon.php",
+    "description": "<?php"
+  },
+  {
+    "filename": "php/logic/compare_strings.php",
+    "language": "php",
+    "bug_type": "compare_strings.php",
+    "description": "<?php"
+  },
+  {
+    "filename": "php/api_misuse/mysql_query.php",
+    "language": "php",
+    "bug_type": "mysql_query.php",
+    "description": "<?php"
+  },
+  {
+    "filename": "php/off_by_one/for_loop.php",
+    "language": "php",
+    "bug_type": "for_loop.php",
+    "description": "<?php"
+  },
+  {
+    "filename": "php/concurrency/session_race.php",
+    "language": "php",
+    "bug_type": "session_race.php",
+    "description": "<?php"
+  },
+  {
+    "filename": "php/performance_antipattern/n_plus_one.php",
+    "language": "php",
+    "bug_type": "n_plus_one.php",
+    "description": "<?php"
+  },
+  {
+    "filename": "php/api_misuse/file_include.php",
+    "language": "php",
+    "bug_type": "file_include.php",
+    "description": "<?php"
+  },
+  {
+    "filename": "php/logic/math_divide.php",
+    "language": "php",
+    "bug_type": "math_divide.php",
+    "description": "<?php"
+  },
+  {
+    "filename": "typescript/syntax/ts_typo.ts",
+    "language": "typescript",
+    "bug_type": "ts_typo.ts",
+    "description": "// Syntax/type bug: incorrect interface property name causes type mismatch at runtime"
+  },
+  {
+    "filename": "typescript/logic/immutable_mutation.ts",
+    "language": "typescript",
+    "bug_type": "immutable_mutation.ts",
+    "description": "// Logic bug: mutating input array passed from caller causes surprising side-effects"
+  },
+  {
+    "filename": "typescript/api_misuse/fetch_json.ts",
+    "language": "typescript",
+    "bug_type": "fetch_json.ts",
+    "description": "// API misuse: not checking response.ok before parsing JSON leads to thrown errors on non-2xx"
+  },
+  {
+    "filename": "typescript/off_by_one/array_index.ts",
+    "language": "typescript",
+    "bug_type": "array_index.ts",
+    "description": "// Off-by-one: loop condition uses <= causing out of bounds access"
+  },
+  {
+    "filename": "typescript/concurrency/promise_all_sequence.ts",
+    "language": "typescript",
+    "bug_type": "promise_all_sequence.ts",
+    "description": "// Concurrency bug: executing heavy async tasks sequentially instead of in parallel"
+  },
+  {
+    "filename": "typescript/performance_antipattern/map_in_map.ts",
+    "language": "typescript",
+    "bug_type": "map_in_map.ts",
+    "description": "// Performance antipattern: nested map/filter causing quadratic complexity over large arrays"
+  },
+  {
+    "filename": "typescript/api_misuse/any_escape.ts",
+    "language": "typescript",
+    "bug_type": "any_escape.ts",
+    "description": "// API misuse: using 'any' to silence types leads to runtime surprises"
+  },
+  {
+    "filename": "typescript/logic/date_bug.ts",
+    "language": "typescript",
+    "bug_type": "date_bug.ts",
+    "description": "// Logic bug: incorrect timezone handling by using getDate instead of getUTCDate in shared service"
+  },
+  {
+    "filename": "javascript/syntax/unclosed_brace.js",
+    "language": "javascript",
+    "bug_type": "unclosed_brace.js",
+    "description": "// Syntax bug: missing closing brace introduced during merge conflict resolution"
+  },
+  {
+    "filename": "javascript/logic/falsy_check.js",
+    "language": "javascript",
+    "bug_type": "falsy_check.js",
+    "description": "// Logic bug: loose falsy check treats 0 as missing value"
+  },
+  {
+    "filename": "javascript/api_misuse/dom_xss.js",
+    "language": "javascript",
+    "bug_type": "dom_xss.js",
+    "description": "// API misuse / security: injecting unsanitized user input into innerHTML"
+  },
+  {
+    "filename": "javascript/off_by_one/slice_bug.js",
+    "language": "javascript",
+    "bug_type": "slice_bug.js",
+    "description": "// Off-by-one: substring end index off-by-one losing last char"
+  },
+  {
+    "filename": "javascript/concurrency/promise_race_misuse.js",
+    "language": "javascript",
+    "bug_type": "promise_race_misuse.js",
+    "description": "// Concurrency bug: using Promise.race to implement timeout without cleanup leads to dangling operations"
+  },
+  {
+    "filename": "javascript/performance_antipattern/recompute_dom.js",
+    "language": "javascript",
+    "bug_type": "recompute_dom.js",
+    "description": "// Performance antipattern: reading layout and writing in tight loop cause layout thrashing"
+  },
+  {
+    "filename": "javascript/api_misuse/callback_pyramid.js",
+    "language": "javascript",
+    "bug_type": "callback_pyramid.js",
+    "description": "// API misuse: deep callback pyramid causing hard-to-handle errors and logic duplication"
+  },
+  {
+    "filename": "javascript/logic/number_parse.js",
+    "language": "javascript",
+    "bug_type": "number_parse.js",
+    "description": "// Logic bug: parseInt used without radix leading to octal surprises in older engines"
+  },
+  {
+    "filename": "javascript/performance_antipattern/large_json_parse.js",
+    "language": "javascript",
+    "bug_type": "large_json_parse.js",
+    "description": "// Performance antipattern: parsing giant JSON on main thread instead of streaming"
+  },
+  {
+    "filename": "react_native/syntax/bad_jsx.jsx",
+    "language": "react_native",
+    "bug_type": "bad_jsx.jsx",
+    "description": "/* Syntax bug in JSX: missing closing tag can crash packager */"
+  },
+  {
+    "filename": "react_native/logic/state_update.js",
+    "language": "react_native",
+    "bug_type": "state_update.js",
+    "description": "/* Logic bug: mutating state directly instead of using setState/useState setter */"
+  },
+  {
+    "filename": "react_native/api_misuse/network_fetch.js",
+    "language": "react_native",
+    "bug_type": "network_fetch.js",
+    "description": "/* API misuse: not handling network cancellation or component unmount - memory leaks possible */"
+  },
+  {
+    "filename": "react_native/off_by_one/array_index_rn.js",
+    "language": "react_native",
+    "bug_type": "array_index_rn.js",
+    "description": "/* Off-by-one: using <= when mapping indices causes undefined rendering item */"
+  },
+  {
+    "filename": "react_native/concurrency/async_setstate.js",
+    "language": "react_native",
+    "bug_type": "async_setstate.js",
+    "description": "/* Concurrency bug: multiple rapid setState calls relying on stale state (closure over old state) */"
+  },
+  {
+    "filename": "react_native/performance_antipattern/inline_functions.js",
+    "language": "react_native",
+    "bug_type": "inline_functions.js",
+    "description": "/* Performance antipattern: creating inline functions and objects during render causing re-renders */"
+  },
+  {
+    "filename": "react_native/api_misuse/unsafe_storage.js",
+    "language": "react_native",
+    "bug_type": "unsafe_storage.js",
+    "description": "/* API misuse/security: storing sensitive tokens in AsyncStorage without encryption */"
+  },
+  {
+    "filename": "react_native/logic/list_key.js",
+    "language": "react_native",
+    "bug_type": "list_key.js",
+    "description": "/* Logic bug: using index as key causing reorder bugs and UI flicker */"
+  },
+  {
+    "filename": "react_native/performance_antipattern/image_size.js",
+    "language": "react_native",
+    "bug_type": "image_size.js",
+    "description": "/* Performance antipattern: loading full-size images into memory without resize */"
+  },
+  {
+    "filename": "react_native/syntax/async_missing_await.js",
+    "language": "react_native",
+    "bug_type": "async_missing_await.js",
+    "description": "/* Logic/syntax mix: forgetting to await an async helper leads to unresolved promise used as data */"
+  }
+]
