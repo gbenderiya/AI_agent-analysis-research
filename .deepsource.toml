@@ -4,14 +4,43 @@ version = 1
 name = "javascript"
 
   [analyzers.meta]
+  
   plugins = [
     "react",
-    "angular",
-    "vue",
-    "angularjs"
-  ]
-  environment = [
-    "jquery",
-    "nodejs",
+    "nextjs",
+    "node",
     "jest"
   ]
+  environment = [
+    "nodejs",
+    "jest",
+    "browser"
+  ]
+
+[[analyzers]]
+name = "typescript"
+
+  [analyzers.meta]
+  environment = [
+    "nodejs",
+    "jest",
+    "browser"
+  ]
+
+[[analyzers]]
+name = "php"
+
+  [analyzers.meta]
+  environment = [
+    "laravel"
+  ]
+
+# (Optional) Enable security and dependency checks
+[[transformers]]
+name = "prettier"
+
+[[transformers]]
+name = "eslint"
+
+[[transformers]]
+name = "php-cs-fixer"
